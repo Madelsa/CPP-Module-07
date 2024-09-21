@@ -6,15 +6,40 @@
 /*   By: mabdelsa <mabdelsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:55:58 by mabdelsa          #+#    #+#             */
-/*   Updated: 2024/09/21 14:58:20 by mabdelsa         ###   ########.fr       */
+/*   Updated: 2024/09/21 15:26:42 by mabdelsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Array.hpp"
 
-#include <iostream>
-#include "Array.hpp"
+
+// class Person 
+// {
+//     public:
+//         std::string name;
+//         Person() : name("") {}
+//         Person(const std::string &name) : name(name) {}    
+// };
+
+// int main() 
+// {
+//     try {
+//     Array<Person> personArray(3);
+    
+//     personArray[0] = Person("Alice");
+//     personArray[1] = Person("Bob");
+//     personArray[2] = Person("Charlie");
+
+//     for (unsigned int i = 0; i < personArray.size(); i++) 
+//     {
+//         std::cout << "Person " << i + 1 << ": " << personArray[i].name << std::endl;
+//     }
+//     } catch (const std::exception &e) 
+//     {
+//         std::cerr << e.what() << std::endl;
+//     }
+// }
 
 int main() 
 {
