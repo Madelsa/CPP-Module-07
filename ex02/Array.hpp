@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mahmoud <mahmoud@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mabdelsa <mabdelsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:55:56 by mabdelsa          #+#    #+#             */
-/*   Updated: 2024/09/20 23:08:32 by mahmoud          ###   ########.fr       */
+/*   Updated: 2024/09/21 14:27:27 by mabdelsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
+
+#include <iostream>
 
 template <typename T>
 class Array 
@@ -80,7 +82,7 @@ Array<T> &Array<T>::operator=(const Array &initTemplate)
 
 template <typename T>
 T &Array<T>::operator[](unsigned int index)
- {
+ {  
     if (index >= len) 
     {
         throw OutOfBoundsException();
