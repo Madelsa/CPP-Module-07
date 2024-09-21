@@ -6,7 +6,7 @@
 /*   By: mabdelsa <mabdelsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:55:56 by mabdelsa          #+#    #+#             */
-/*   Updated: 2024/09/21 15:25:32 by mabdelsa         ###   ########.fr       */
+/*   Updated: 2024/09/21 15:50:51 by mabdelsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,8 @@ Array<T> &Array<T>::operator=(const Array &initTemplate)
         delete[] arr;
         len = initTemplate.len;
         arr = new T[len];
-        for (unsigned int i = 0; i < len; ++i) {
+        for (unsigned int i = 0; i < len; i++) 
+        {
             arr[i] = initTemplate.arr[i];
         }
     }
@@ -105,9 +106,6 @@ unsigned int Array<T>::size() const
 {
     return len;
 }
-
-
-
 
 #endif
 
